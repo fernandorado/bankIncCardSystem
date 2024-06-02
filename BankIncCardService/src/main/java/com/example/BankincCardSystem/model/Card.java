@@ -6,6 +6,7 @@ package com.example.BankincCardSystem.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import java.math.BigDecimal;
 import java.time.LocalDate;
 
 /**
@@ -14,6 +15,7 @@ import java.time.LocalDate;
  */
 @Entity
 public class Card {
+
     @Id
     private String id;
     private String productId;
@@ -21,7 +23,8 @@ public class Card {
     private LocalDate expiryDate;
     private boolean active;
     private boolean blocked;
-    private double balance;
+    private BigDecimal balance = BigDecimal.ZERO;
+    private String currency;
 
     public String getId() {
         return id;
@@ -71,14 +74,20 @@ public class Card {
         this.blocked = blocked;
     }
 
-    public double getBalance() {
+    public BigDecimal getBalance() {
         return balance;
     }
 
-    public void setBalance(double balance) {
+    public void setBalance(BigDecimal balance) {
         this.balance = balance;
     }
-    
-    
+
+    public String getCurrency() {
+        return currency;
+    }
+
+    public void setCurrency(String currency) {
+        this.currency = currency;
+    }
 
 }

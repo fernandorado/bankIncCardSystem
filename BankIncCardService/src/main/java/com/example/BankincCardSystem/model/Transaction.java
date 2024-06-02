@@ -8,6 +8,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
@@ -21,9 +22,11 @@ public class Transaction {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String cardId;
-    private double amount;
+    private BigDecimal amount = BigDecimal.ZERO;
     private LocalDateTime transactionDate;
     private boolean cancelled;
+    
+
 
     public Long getId() {
         return id;
@@ -41,11 +44,11 @@ public class Transaction {
         this.cardId = cardId;
     }
 
-    public double getAmount() {
+    public BigDecimal  getAmount() {
         return amount;
     }
 
-    public void setAmount(double amount) {
+    public void setAmount(BigDecimal  amount) {
         this.amount = amount;
     }
 
@@ -64,7 +67,6 @@ public class Transaction {
     public void setCancelled(boolean cancelled) {
         this.cancelled = cancelled;
     }
-    
     
     
     

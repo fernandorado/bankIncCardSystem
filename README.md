@@ -39,8 +39,4 @@ Para ejecutar la aplicación localmente, siga estos pasos:
 
 Se proporciona una colección de Postman llamada `BankInc.postman_collection.json`, que contiene una serie de solicitudes predefinidas para probar la solución. Importe esta colección en su cliente de Postman para comenzar a realizar solicitudes a la API.
 
-### Documentación Adicional
-
-La documentación adicional, que incluye el flujo de datos, el modelo de base de datos, los requisitos obtenidos y las buenas prácticas de desarrollo, se encuentra en el repositorio del código fuente. Consulte los archivos relevantes para obtener más detalles sobre la solución implementada.
-
-Con estos pasos, podrá integrar y utilizar fácilmente el API de Bank Inc en sus aplicaciones, asegurando un proceso fluido y sin problemas de integración.
+## Con estos pasos, podrá integrar y utilizar fácilmente el API de Bank Inc en sus aplicaciones, asegurando un proceso fluido y sin problemas de integración.
